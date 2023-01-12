@@ -1,0 +1,761 @@
+
+#container {
+    overflow-x: hidden;
+    margin: 0 auto;
+    min-width: 320px;
+    background-color: black;
+}
+a{
+    color: white;
+}
+.main-section {
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .7)),
+        linear-gradient(0deg, transparent 60%, rgba(0, 0, 0, .7)), radial-gradient(50% 75%, transparent 0, rgba(0, 0, 0, .8) 100%), url(../Images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-width: 320px;
+}
+
+/* navbar coding start  */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo img {
+    width: 17rem;
+    margin: 4px 25px;
+    pointer-events: none;
+}
+
+.right-nav {
+    display: flex;
+    gap: 30px;
+    align-self: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.button {
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-in {
+    padding: 9px 16px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    border-radius: 5px;
+}
+
+.select {
+    padding: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.select option {
+    background-color: #222;
+}
+
+.footer-select {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.select-2 option {
+    background-color: #222;
+}
+
+/* ---------------  navbar ends --------- */
+.main-content {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    max-width: 55%;
+    margin-top: 90px;
+}
+
+.content-box {
+    margin: 4% 0;
+}
+
+.main-content h1 {
+    font-size: 6.5rem;
+    text-align: center;
+}
+
+.main-content .content-box h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.main-content p {
+    text-align: center;
+    font-size: 1.9rem;
+}
+.main-content .validate-msg{
+    font-size: 1.6rem;
+    color: yellow;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+/* -------first page form -------------*/
+.input {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input input {
+    padding: 2.4rem 1rem;
+    font-size: 1.7rem;
+    border: none;
+    outline: none;
+    flex: 2;
+
+}
+
+.input button {
+    display: block;
+    align-self: stretch;
+    border: none;
+    background-color: var(--theme-color);
+    color: white;
+    font-size: clamp(1rem, 100vw, 2.8rem);
+    cursor: pointer;
+    flex: 1;
+}
+
+.input button:hover {
+    background-color: #ff1f2a;
+}
+
+/* -------------- second section starting --------------- */
+.wrapper {
+    border-top: 8px solid var(--border-color);
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+
+.second-section {
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15rem 8rem;
+    gap: 10%;
+    z-index: -5;
+    min-width: 320px;
+    max-width: 80%;
+}
+
+.content-2 {
+    margin: 15px 0;
+}
+
+.content-2 h1 {
+    font-size: 5rem;
+    margin-bottom: 4%;
+}
+
+.content-2 p {
+    font-size: 2.8rem;
+}
+
+.image-2 {
+    position: relative;
+    z-index: 10;
+}
+
+.image-2 img {
+    width: clamp(300px, 100vw, 450px);
+    position: absolute;
+    top: -70px;
+    left: -61px;
+}
+
+.image-2 video {
+    width: clamp(175px, 100vw, 325px);
+    z-index: -1;
+}
+
+/* -------------- Third section starting --------------- */
+.third-section {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 3.5rem;
+    padding: 5rem 8rem;
+    max-width: 80%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.image-3 {
+    position: relative;
+}
+
+.image-3 img {
+    width: 50rem;
+
+}
+
+.download-div {
+    display: flex;
+    max-width: 30.5rem;
+    max-height: 10rem;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 13px;
+    padding: 10px 10px;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    gap: 20px;
+    position: absolute;
+    left: 95px;
+    bottom: 40px;
+}
+
+.download-div .downlaoding {
+    flex: 1;
+}
+
+.download-div .downlaoding h3 {
+    font-size: 1.7rem;
+}
+
+.download-div .downlaoding a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #4c4cff;
+}
+
+.download-div .boxshot {
+    max-width: 60px;
+}
+
+.download-div .boxshot img {
+    width: 100%;
+}
+
+.download-div .download-icon img {
+    width: 5rem;
+}
+
+
+
+.content-3 {
+    margin: 15px 0;
+}
+
+.content-3 h1 {
+    font-size: 4.9rem;
+    margin-bottom: 2rem;
+}
+
+.content-3 p {
+    font-size: 2.8rem;
+}
+
+/* -------------- fourth section starting --------------- */
+.fourth-section {
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 13rem 8rem;
+    z-index: -5;
+    max-width: 80%;
+    min-width: 320px;
+}
+
+
+.content-4 h1 {
+    font-size: 5rem;
+    margin-bottom: 4%;
+}
+
+.content-4 p {
+    font-size: 2.8rem;
+}
+
+.image-4 {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.image-4 img {
+    width: clamp(300px, 100vw, 500px);
+    position: absolute;
+    top: -41px;
+    left: -97px;
+}
+
+.image-4 video {
+    width: clamp(150px, 100vw, 300px);
+    z-index: -1;
+}
+
+
+/* -------------- fifth section starting --------------- */
+.fifth-section {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 6rem;
+    gap: 30px;
+    min-width: 320px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.content-5 {
+    margin: 15px 0;
+}
+
+.content-5 h1 {
+    font-size: 5rem;
+    margin-bottom: 4%;
+}
+
+.content-5 p {
+    font-size: 2.6rem;
+}
+
+.fifth-section .image-5 img {
+    width: 50rem;
+}
+
+/* --------------------------
+--faq section start ------------------ */
+.faq-section {
+    border-top: 8px solid var(--border-color);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.faq-section h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.faq-section .faqs-box {
+    max-width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faq-section .faqs-box .faq button {
+    border: none;
+    background-color: #303030;
+    color: white;
+    font-size: 2.7rem;
+    width: 80rem;
+    position: relative;
+    text-align: left;
+    padding: 20px 15px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.faq-section .faqs-box .faq img {
+    filter: invert(1);
+    width: 3.5rem;
+    position: absolute;
+    right: 3%;
+}
+
+.faq-section .faqs-box .faq p {
+    width: 100%;
+    background-color: #303030;
+    padding: 20px 15px;
+    font-size: 2.7rem;
+}
+
+.faq-section .faq-last-div {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.faq-section .faq-last-div h3 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.isNotVisible{
+    display: none;
+}
+.isVisible{
+    display: block;
+}
+/*-------------------
+ -----------faq section ends-------------- */
+/* -------------footer start ------------------*/
+.footer {
+    border-top: 8px solid var(--border-color);
+    background-color: black;
+    color: #737373;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer .footer-box h3 {
+    font-size: 17px;
+    color: #737373;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer .footer-box a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer .footer-box li {
+    list-style: none;
+    margin: 18px 5px;
+}
+
+.footer .footer-box ul li a {
+    font-size: 13px;
+}
+
+.footer .footer-box a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-box {
+    width: 100%;
+    margin-top: 45px;
+    margin-left: 70px;
+}
+
+.footer .footer-box .footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.select-2 {
+    border-radius: 0px;
+    border: 0.3px solid #737373;
+    color: #737373;
+    padding: 10px 22px;
+    margin-top: 25px;
+}
+
+.India p {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* ---------------- media queries start here ------------------------- */
+@media only screen and (min-width:2000px) and (max-width:3000px) {
+    html {
+        font-size: 90%;
+    }
+
+}
+
+@media only screen and (max-width:1100px) {
+    .second-section {
+        flex-direction: column;
+        max-width: 100%;
+        padding-top: 15px;
+        padding-bottom: 150px;
+        margin: auto;
+    }
+
+    .second-section .content-2 {
+
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 95px;
+    }
+
+    .image-2 img {
+        width: clamp(300px, 100vw, 520px);
+        top: -81px;
+        left: -71px;
+
+    }
+
+    /* ------------------- */
+    .image-2 video {
+        width: clamp(175px, 100vw, 375px);
+
+    }
+
+    .third-section {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        padding-top: 15px;
+        gap: 0;
+    }
+
+    .third-section .content-3 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .third-section .image-3>img {
+        width: 65rem;
+    }
+
+    .download-div .boxshot img {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* ------------------ */
+    .fourth-section {
+        flex-direction: column;
+        max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 150px;
+        gap: 0;
+    }
+
+    .fourth-section .content-4 {
+
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 95px;
+    }
+
+    /* ------------------ */
+    .fifth-section {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        padding-top: 20px;
+        gap: 10px;
+    }
+
+    .fifth-section .content-5 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .fifth-section .image-5 img {
+        width: 60rem;
+    }
+}
+
+@media only screen and (min-width:960px) and (max-width:1320px) {
+    html {
+        font-size: 50%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:960px) {
+    html {
+        font-size: 45%;
+    }
+
+    .main-content {
+        min-width: 100%;
+    }
+
+    .input input {
+        min-width: 60%;
+        padding: 3.3rem 1.5rem;
+    }
+
+    .input {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input button {
+        padding: 2rem 3rem;
+        flex-basis: 40px;
+        margin: 0 auto;
+        align-self: baseline;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    html {
+        font-size: 40%;
+    }
+
+    .input input {
+        min-width: 90%;
+        padding: 3rem 1.2rem;
+        border-radius: 2px;
+    }
+
+    .input button {
+        padding: 1.5rem 2.5rem;
+        font-size: 2.5rem;
+    }
+
+    .sign-in {
+        padding: 6px 12px;
+        font-weight: 500;
+    }
+
+    .logo img {
+        width: 12rem;
+    }
+
+    .select-elm .select {
+        padding: 5px;
+        font-size: 1.4rem;
+    }
+
+    .right-nav {
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-right: 5px;
+    }
+
+    .faq-section .faqs-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:450px) and (max-width:600px) {
+    .faq-section .faqs-box .faq p {
+        width: 80rem;
+    }
+    .main-content .validate-msg{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    html {
+        font-size: 35%;
+    }
+
+    .main-section {
+        min-height: 85vh;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .main-section {
+        min-height: 75vh;
+        margin-bottom: 30px;
+    }
+
+    .faq-section .faqs-box .faq button {
+        width: 55rem;
+    }
+
+    .faq-section .faqs-box .faq p {
+        width: 55rem;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .image-2 img {
+        width: clamp(300px, 100vw, 450px);
+        top: -70px;
+        left: -61px;
+    }
+
+    .image-2 video {
+        width: clamp(175px, 100vw, 325px);
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:500px) {
+    .footer .footer-box h3 {
+        text-align: left;
+    }
+
+    .footer .footer-box .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .India,
+    .select-elm2 {
+        margin-left: 15px;
+    }
+
+    .second-section .image-2 img {
+        width: 370px;
+        top: -58px;
+        left: -50px;
+    }
+
+    .second-section .image-2 video {
+        width: 270px;
+    }
+
+
+    .fourth-section .image-4 img {
+        width: 370px;
+        top: -25px;
+        left: -70px;
+    }
+
+    .fourth-section .image-4 video {
+        width: 230px;
+    }
+
+}
+
+
+@media only screen and (min-height:800px) and (max-height:1500px) {
+    .main-section {
+        min-height: 65vh;
+    }
+}
+
+/* ---------------- media queries ends ------------------------- */
+
+/* -------------footer ends ------------------*/
